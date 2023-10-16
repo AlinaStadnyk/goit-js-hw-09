@@ -16,3 +16,14 @@ img {
   display: block;
   max-width: 100%;
 }
+.switcher-btn {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  margin-top: 200px;
+}
+.switcher {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
