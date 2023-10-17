@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  cursor: pointer;
 }
 
 img {
@@ -26,4 +27,25 @@ img {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+.timer-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.timer-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.label {
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.value {
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
