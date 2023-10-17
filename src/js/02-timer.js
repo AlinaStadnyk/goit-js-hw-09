@@ -22,12 +22,14 @@ const dateChoice = flatpickr(picker, {
       start.disabled = false;
 
       start.addEventListener('click', () => {
-        timerId = setInterval(() => {
+        const timerId = setInterval(() => {
           const ms = selectedId - new Date().getTime();
+
           if (ms < 0) {
             clearInterval(timerId);
             return;
           }
+
           const leftTime = convertMs(ms);
 
           function convertMs(ms) {
@@ -52,6 +54,7 @@ const dateChoice = flatpickr(picker, {
             return { days, hours, minutes, seconds };
           }
         }, 1000);
+
         start.disabled = true;
       });
     }
